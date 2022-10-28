@@ -8,16 +8,22 @@
 
 
 
-# array = [180, 120,140]
-# height = [190]
-# i = array + height
-# i.sort(reverse=True)
-# print(i)
+array = [180, 120,140]
+height = [190]
+i = array + height
+i.sort(reverse=True)
+print(i.index(190))
+
+# def solution(array, height):
+#     array = list[input()]
+#     height = list[input()]
+#     i = array + height
+#     i.sort(reverse = True)
+#     return(i.index(190))
+# # 머쓱이보다 키 큰 사람
 
 def solution(array, height):
-    array = list[input()]
-    height = list[input()]
+    height = list(map(int,height))
     i = array + height
     i.sort(reverse = True)
     return(i.index(190))
-# 머쓱이보다 키 큰 사람
